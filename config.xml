@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.appealtech.appealtechapp" version="2.1.0" android-versionCode="20170921" ios-CFBundleVersion="2017092201" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>AppealTech</name>
+    <description>
+        AppealTech Client App
+    </description>
+    <author email="info@appealtech.com" href="http://www.appealtech.com">
+        AppealTech
+    </author>
+
+    <content src="index.html" />
+    <preference name="fullscreen" value="true"/>
+	<preference name="StatusBarOverlaysWebView" value="true" /> 
+	<preference name="StatusBarBackgroundColor" value="#d8d8d8" />
+	<preference name="StatusBarStyle" value="default" />
+    <preference name="orientation" value="portrait"/>
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="phonegap-version" value="cli-6.5.0" />
+
+    <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
+    <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1" />
+	<plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" />
+    <!-- Plugin 
+    <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.2.0" >    
+        <variable name="CAMERA_USAGE_DESCRIPTION" value="AppealTech will need access to the camera when in use." />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="AppealTech will need access to the photos when in use." />
+        <variable name="MICROPHONE_USAGE_DESCRIPTION" value="AppealTech will need access to the microphone when in use." />
+    </plugin>
+    -->
+    <plugin name="cordova-plugin-console" source="npm" spec="~1.0.2" />
+    <plugin name="cordova-plugin-contacts" source="npm" spec="~2.0.1" />
+    <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1" />
+    <plugin name="cordova-plugin-device-motion" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-device-orientation" source="npm" spec="~1.0.2" />
+    <plugin name="cordova-plugin-dialogs" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-file" source="npm" spec="~4.1.1" />
+    <plugin name="cordova-plugin-file-transfer" source="npm" spec="~1.5.0" />
+    <plugin name="cordova-plugin-geolocation" source="npm" spec="~2.1.0" />
+    <plugin name="cordova-plugin-globalization" source="npm" spec="~1.0.3" />
+    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.3.0" />
+    <plugin name="cordova-plugin-media" source="npm" spec="~2.2.0" />
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0" />
+    <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
+    <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+    
+    <gap:config-file platform="ios" parent="NSPhotoLibraryUsageDescription">
+    	<string>For uploading documents</string>
+	</gap:config-file>
+   <gap:config-file platform="ios" parent="NSCameraUsageDescription">
+    	<string>For uploading images of documents</string>
+	</gap:config-file>
+    <!-- Google Maps native plugin -->
+    <!--
+    <plugin name="cordova-plugin-googlemaps" spec="2.0.0">
+		<variable name="API_KEY_FOR_ANDROID" value="AIzaSyCHLPu25oYEQFwXKZ0aU7XoaXwOO8dbDW8" />
+		<variable name="API_KEY_FOR_IOS" value="AIzaSyCHLPu25oYEQFwXKZ0aU7XoaXwOO8dbDW8" />
+		<variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="AppealTech is using location on when in use." />
+		<variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="AppealTech is using location always." />
+    </plugin>
+	-->
+   
+    <icon src="icon.png" />
+
+	<!-- iPhone and iPod touch -->
+	<splash src="Default.png" platform="ios" width="320" height="480" />
+	<splash src="Default@2x.png" platform="ios" width="640" height="960" />
+
+	<!-- iPhone 5 / iPod Touch (5th Generation) -->
+	<splash src="Default-568h@2x.png" platform="ios" width="640" height="1136" />
+
+	<!-- iPhone 6 -->
+	<splash src="Default-667h@2x.png" platform="ios" width="750" height="1334" />
+	<splash src="Default-Portrait-736h@3x.png" platform="ios" width="1242" height="2208" />
+	
+	<!-- iPad -->
+	<splash src="Default-Portrait.png" platform="ios" width="768" height="1024" />
+
+	<!-- Retina iPad -->
+	<splash src="Default-Portrait@2x.png" platform="ios" width="1536" height="2048" />
+		
+	
+    <platform name="android">
+        <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
+        <icon density="mdpi" src="res/icon/android/icon-48-mdpi.png" />
+        <icon density="hdpi" src="res/icon/android/icon-72-hdpi.png" />
+        <icon density="xhdpi" src="res/icon/android/icon-96-xhdpi.png" />
+    </platform>
+
+    <platform name="ios">
+        <icon height="57" platform="ios" src="res/icon/ios/icon.png" width="57" />
+        <icon height="114" platform="ios" src="res/icon/ios/icon-57@2x.png" width="114" />
+        <icon height="72" platform="ios" src="res/icon/ios/icon-72.png" width="72" />
+		<icon height="76" platform="ios" src="res/icon/ios/icon-76.png" width="76" />
+		<icon height="40" platform="ios" src="res/icon/ios/icon-small-40.png" width="40" />
+		<icon height="80" platform="ios" src="res/icon/ios/icon-small-40@2x.png" width="80" />
+		<icon height="120" platform="ios" src="res/icon/ios/icon-small-40@3x.png" width="120" />
+		<icon height="29" platform="ios" src="res/icon/ios/icon-small.png" width="29" />
+		<icon height="58" platform="ios" src="res/icon/ios/icon-small@2x.png" width="58" />
+		<icon height="87" platform="ios" src="res/icon/ios/icon-small@3x.png" width="87" />		
+		<icon height="144" platform="ios" src="res/icon/ios/icon-72@2x.png" width="144" />
+		<icon height="152" platform="ios" src="res/icon/ios/icon-76@2x.png" width="152" />
+		<icon height="120" platform="ios" src="res/icon/ios/icon-60@2x.png" width="120" />
+		<icon height="180" platform="ios" src="res/icon/ios/icon-60@3x.png" width="180" />
+		<icon height="1024" platform="ios" src="res/icon/ios/iTunesArtwork@2x.png" width="1024" />
+    </platform>
+
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+
+    <engine name="ios" spec="~4.1.1" />
+</widget>
