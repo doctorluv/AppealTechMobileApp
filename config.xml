@@ -44,6 +44,12 @@
     <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0" />
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
+	<plugin name="cordova-plugin-googlemaps" spec="2.0.0">
+		<variable name="API_KEY_FOR_ANDROID" value="AIzaSyCHLPu25oYEQFwXKZ0aU7XoaXwOO8dbDW8" />
+		<variable name="API_KEY_FOR_IOS" value="AIzaSyCHLPu25oYEQFwXKZ0aU7XoaXwOO8dbDW8" />
+		<variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="AppealTech is using location on when in use." />
+		<variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="AppealTech is using location always." />
+    </plugin>
     
     <gap:config-file platform="ios" parent="NSPhotoLibraryUsageDescription">
     	<string>For uploading documents</string>
@@ -51,15 +57,7 @@
    <gap:config-file platform="ios" parent="NSCameraUsageDescription">
     	<string>For uploading images of documents</string>
 	</gap:config-file>
-    <!-- Google Maps native plugin -->
-    <!--
-    <plugin name="cordova-plugin-googlemaps" spec="2.0.0">
-		<variable name="API_KEY_FOR_ANDROID" value="AIzaSyCHLPu25oYEQFwXKZ0aU7XoaXwOO8dbDW8" />
-		<variable name="API_KEY_FOR_IOS" value="AIzaSyCHLPu25oYEQFwXKZ0aU7XoaXwOO8dbDW8" />
-		<variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="AppealTech is using location on when in use." />
-		<variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="AppealTech is using location always." />
-    </plugin>
-	-->
+
    
     <icon src="icon.png" />
 
@@ -79,7 +77,6 @@
 
 	<!-- Retina iPad -->
 	<splash src="Default-Portrait@2x.png" platform="ios" width="1536" height="2048" />
-		
 	
     <platform name="android">
         <icon density="ldpi" src="res/icon/android/icon-36-ldpi.png" />
